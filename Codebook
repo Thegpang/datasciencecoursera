@@ -1,0 +1,33 @@
+# CodeBook for the Tidy Dataset
+
+## Dataset Overview
+This code book accompanies the tidy dataset created from the Human Activity Recognition Using Smartphones Dataset Version 1.0. The dataset was collected from accelerometers and gyroscopes of the Samsung Galaxy S smartphone, capturing various activities performed by 30 subjects.
+
+## Variables
+The tidy dataset contains the following variables:
+
+- `subject`: Integer. Identifier of the subject who carried out the experiment.
+- `activity`: Factor. Activity performed by the subject during measurements.
+- `tBodyAcc-mean()-X`: Numeric. Mean body acceleration in the X direction.
+- ... (include all other variables with a brief description)
+
+## Transformations
+The following transformations were applied to the original dataset:
+
+1. Merged the training and the test sets.
+2. Extracted measurements on the mean and standard deviation.
+3. Applied descriptive activity names.
+4. Labeled the dataset with descriptive variable names.
+5. Created a second, tidy dataset with the average of each variable for each activity and subject.
+
+The variables were selected based on the presence of 'mean()' or 'std()' in their names.
+
+## Data Summary
+The resulting tidy dataset provides the average of each variable for each activity and each subject, creating a clear and easy-to-understand overview of the data.
+
+## Acknowledgements
+The dataset was obtained from:
+
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012.
+
+For questions or additional information, please contact activityrecognition@smartlab.ws.
